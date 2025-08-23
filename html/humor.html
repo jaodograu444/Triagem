@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientações para Mudanças de Humor</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container solution-page">
+        <h2>Orientações para Mudanças de Humor</h2>
+        
+        <div id="initial-question">
+            <h3>Como você descreve suas mudanças de humor?</h3>
+            <div class="question-options">
+                <button class="option-button" onclick="showContent('leve')">Tenho irritabilidade ocasional ou me sinto triste por um tempo.</button>
+                <button class="option-button" onclick="showContent('grave')">Sinto variações de humor extremas que afetam meu dia a dia.</button>
+            </div>
+        </div>
+
+        <div id="solution-content" style="display: none;">
+            <h3>Dicas para Estabilizar o Humor</h3>
+            <div id="solution-tips"></div>
+            
+            <form id="feedback-form" style="display: none;">
+                <h3>As orientações ajudaram?</h3>
+                <div class="feedback-options">
+                    <input type="radio" id="yes" name="feedback" value="sim" required>
+                    <label for="yes">Sim, ajudaram.</label>
+                    <input type="radio" id="no" name="feedback" value="nao">
+                    <label for="no">Não, preciso de mais ajuda.</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="feedback-message"></div>
+        </div>
+
+        <a href="/html/index.html" class="back-button">Voltar para a Triagem</a>
+    </div>
+
+    <script src="/js/script_humor.js"></script>
+</body>
+</html>

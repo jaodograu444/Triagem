@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientações para Concentração</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container solution-page">
+        <h2>Orientações para Concentração</h2>
+        
+        <div id="initial-question">
+            <h3>Sua dificuldade de concentração é...</h3>
+            <div class="question-options">
+                <button class="option-button" onclick="showContent('leve')">Leve e esporádica.</button>
+                <button class="option-button" onclick="showContent('grave')">Intensa e afeta meu trabalho/estudo.</button>
+            </div>
+        </div>
+
+        <div id="solution-content" style="display: none;">
+            <h3>Dicas para Melhorar o Foco</h3>
+            <div id="solution-tips"></div>
+            
+            <form id="feedback-form" style="display: none;">
+                <h3>As orientações ajudaram?</h3>
+                <div class="feedback-options">
+                    <input type="radio" id="yes" name="feedback" value="sim" required>
+                    <label for="yes">Sim, ajudaram.</label>
+                    <input type="radio" id="no" name="feedback" value="nao">
+                    <label for="no">Não, preciso de mais ajuda.</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="feedback-message"></div>
+        </div>
+
+        <a href="/html/index.html" class="back-button">Voltar para a Triagem</a>
+    </div>
+
+    <script src="/js/script_concentracao.js"></script>
+</body>
+</html>
